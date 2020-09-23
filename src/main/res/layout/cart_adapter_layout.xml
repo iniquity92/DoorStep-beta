@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cart_adapter_relative_layout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_cart_item"
+        android:src="@drawable/ic_baseline_android_108"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:id="@+id/tv_cart_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="28sp"
+        android:layout_toEndOf="@id/img_cart_item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QTY"
+        android:id="@+id/tv_cart_item_qty_label"
+        android:layout_toEndOf="@id/img_cart_item"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_cart_item_name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOCK QTY"
+        android:id="@+id/tv_cart_item_stock_qty_label"
+        android:layout_toEndOf="@id/img_cart_item"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_cart_item_name" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_cart_item"
+        android:layout_toEndOf="@id/tv_cart_item_qty_label"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_cart_item_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_cart_item_stock_qty"
+        android:text="2000000"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/tv_cart_item_stock_qty_label"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_cart_item_name"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_cart_item_item_total"
+        android:text="Rs.18,000"
+        android:textSize="26sp"
+        android:layout_alignBottom="@id/img_cart_item"
+        android:layout_toEndOf="@id/img_cart_item" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Delete item"
+        android:id="@+id/btn_cart_item_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_below="@id/tv_cart_item_name" />
+
+
+</RelativeLayout>

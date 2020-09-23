@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cardView_catalog_recycler"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:id="@+id/item_cardview_relative">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_item_cardview"
+            android:src="@drawable/ic_paper_aeroplane" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_cardview_item_name"
+            android:text="Paper Aeroplane"
+            android:textSize="28sp"
+            android:layout_toEndOf="@id/img_item_cardview"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_cardview_item_price_label"
+            android:text="Unit Price : "
+            android:textSize="22sp"
+            android:layout_toEndOf="@id/img_item_cardview"
+            android:layout_below="@id/tv_item_cardview_item_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_cardview_item_price"
+            android:text="Rs. 200000"
+            android:textSize="22sp"
+            android:layout_toEndOf="@id/tv_item_cardview_item_price_label"
+
+            android:layout_below="@id/tv_item_cardview_item_name" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_cardview_item_qty_label"
+            android:text="Stock Qty : "
+            android:textSize="28sp"
+            android:layout_toEndOf="@id/img_item_cardview"
+            android:layout_below="@id/tv_item_cardview_item_price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_cardview_item_qty"
+            android:text="2000"
+            android:textSize="28sp"
+            android:layout_toEndOf="@id/tv_item_cardview_item_qty_label"
+            android:layout_below="@id/tv_item_cardview_item_price" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_item_cardview_add_cart"
+            android:text="Add to cart"
+            android:drawableLeft="@drawable/ic_shopping_cart_24_black"
+            android:layout_below="@id/tv_item_cardview_item_qty"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_item_cardview_add_wishlist"
+            android:text="Add to wishlist"
+            android:drawableLeft="@drawable/ic_favorite_border_24_black"
+            android:layout_below="@id/btn_item_cardview_add_cart"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

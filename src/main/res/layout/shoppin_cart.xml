@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_cart_action_layout"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/shopping_cart_cart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageView
+            android:id="@+id/shopping_cart_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge"
+            android:padding="5dp"
+            android:visibility="invisible"
+            android:layout_alignRight="@id/shopping_cart_cart"
+            android:layout_alignTop="@id/shopping_cart_cart"/>
+
+        <TextView
+            android:id="@+id/shopping_cart_text"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@color/fui_transparent"
+            android:gravity="center"
+            android:textSize="9sp"
+            android:visibility="invisible"
+            android:layout_alignRight="@id/shopping_cart_cart"/>
+
+
+</RelativeLayout>
